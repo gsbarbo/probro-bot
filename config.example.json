@@ -1,0 +1,5 @@
+{
+    "clientId": "Application ID",
+    "guildId": "Server ID",
+	"token": "Secret Token For Application"
+}
