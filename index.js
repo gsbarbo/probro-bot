@@ -27,7 +27,7 @@ function calcTime(offset, plus_hours = 0) {
 
   // create new Date object for different city
   // using supplied offset
-  nd = new Date(utc + 3600000 * offset + add_hours);
+  nd = new Date(utc + (3600000 * offset) + add_hours);
 
   // return time as a string
   return nd.toLocaleString();
