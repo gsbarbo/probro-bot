@@ -40,12 +40,12 @@ client.on("interactionCreate", async (interaction) => {
 
   if (commandName === "time") {
     await interaction.reply(
-      "Gage: " + calcTime("-5") + "\nLeslie: " + calcTime("+12")
+      "Gage: " + calcTime("-5") + "\nLeslie: " + calcTime("+12")  + "\nJared: " + calcTime("+10")  + "\nDavid: " + calcTime("+1")
     );
   } else if (commandName === "whattime") {
     const add = interaction.options.getInteger("hours");
     await interaction.reply(
-      "Gage: " + calcTime("-5", add) + "\nLeslie: " + calcTime("+12", add)
+      "Gage: " + calcTime("-5", add) + "\nLeslie: " + calcTime("+12", add)  + "\nJared: " + calcTime("+10", add)  + "\nDavid: " + calcTime("+1", add)
     );
   }
 });
